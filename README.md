@@ -17,7 +17,7 @@
    - %USERPROFILE%
    - mkdir .kube (create .kube directory)
 
-# (go to .kube folder and create & create text document named as "config")
+ (go to .kube folder and create & create text document named as "config")
 
 #INSTALL MINIKUBE:
 (in CMD run as administrator)
