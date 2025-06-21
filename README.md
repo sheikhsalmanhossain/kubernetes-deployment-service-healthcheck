@@ -1,4 +1,5 @@
 #Kubernetes setup:
+#IMPERATIVE_APPROACH:(where everything in command instead of yaml file)
 
 #in CMD run:
     - systeminfo (to check hypervisor is detected or not)
