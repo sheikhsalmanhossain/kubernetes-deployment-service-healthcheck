@@ -1,4 +1,5 @@
 #Kubernetes setup:
+
 #in CMD run:
     - systeminfo (to check hypervisor is detected or not)
 
