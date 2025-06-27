@@ -37,6 +37,8 @@
  - kubectl create deployment [deployment-name] --image=[image-from-dockerhub]
 #To check deployment:
  - kubectl get deployment
+# Try reaching deployment:
+  - minikube service story-service
 #Delete deployment:
   - kubectl delete deployment [deployment-name]
 #To check pods:
