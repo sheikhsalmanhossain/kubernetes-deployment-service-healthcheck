@@ -1,4 +1,4 @@
-#Kubernetes setup:
+# Kubernetes setup:
 #IMPERATIVE_APPROACH:(where everything in command instead of yaml file)
 
 #in CMD run:
@@ -33,17 +33,17 @@
 
      (SETUP COMPLETE)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#Create a Deployment:
+# Create a Deployment:
  - kubectl create deployment [deployment-name] --image=[image-from-dockerhub]
 #To check deployment:
  - kubectl get deployment
-# Try reaching deployment:
-  - minikube service story-service
+#Try reaching deployment:
+  - minikube service [service-name]
 #Delete deployment:
   - kubectl delete deployment [deployment-name]
 #To check pods:
  - kubectl get pods
-# To delete deployment:
+#To delete deployment:
  - kubectl delete deployment [deployment-name]
 #Exposing pod which is created by deployment:
  - kubectl expose deployment [deployment-name] --type=LoadBalancer --port=8080
@@ -57,7 +57,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-#Scaling Pods:
+# Scaling Pods:
 
   - kubectl scale deployment/[deployment-name] --replicas=3[how-many-replicas-you-want]
 
@@ -65,7 +65,7 @@
   - kubectl get pods
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#updating deployments:
+# updating deployments:
    #Updating dockerhub image:
      - docker build -t [dockerHubUsername/ImageName]:tag .
      - docker push [dockerHubUsername/ImageName]:tag
@@ -78,7 +78,7 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Deployment rollback:(If you want to back previous deployment state)
+# Deployment rollback:(If you want to back previous deployment state)
   - kubectl rollout undo deployment/[deployment-name]
 
 #inspect the progress of rollout:
